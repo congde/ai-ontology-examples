@@ -1,0 +1,8 @@
+PREFIX ex: <https://example.org/enterprise/>
+SELECT ?ticket ?status WHERE {
+  ?ticket a ex:Ticket ;
+    ex:belongsTo ex:C-001 ;
+    ex:ticketStatus ?status .
+  FILTER (?status IN ("处理中", "待派工"))
+}
+ORDER BY ?ticket

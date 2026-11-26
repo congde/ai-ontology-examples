@@ -1,0 +1,9 @@
+@prefix ex: <https://example.org/enterprise/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+ex:CloseRequestShape a sh:NodeShape ;
+  sh:targetClass ex:CloseRequest ;
+  sh:property [
+    sh:path ex:resolutionRecord ;
+    sh:minCount 1 ;
+    sh:class ex:ResolutionRecord
+  ] .

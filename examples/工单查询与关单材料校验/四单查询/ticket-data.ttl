@@ -1,0 +1,21 @@
+@prefix ex: <https://example.org/enterprise/> .
+ex:C-001 a ex:Customer .
+ex:C-002 a ex:Customer .
+ex:C-003 a ex:Customer .
+ex:E-001 a ex:Equipment ; ex:equipmentStatus "运行中" .
+ex:E-002 a ex:Equipment ; ex:equipmentStatus "运行中" .
+ex:T-001 a ex:Ticket ;
+  ex:belongsTo ex:C-001 ;
+  ex:relatedEquipment ex:E-001 ;
+  ex:ticketStatus "处理中" .
+ex:T-002 a ex:Ticket ;
+  ex:belongsTo ex:C-002 ;
+  ex:relatedEquipment ex:E-002 ;
+  ex:ticketStatus "已完成" .
+ex:T-003 a ex:Ticket ;
+  ex:belongsTo ex:C-001 ;
+  ex:relatedEquipment ex:E-001 ;
+  ex:ticketStatus "待派工" .
+ex:T-004 a ex:Ticket ;
+  ex:belongsTo ex:C-003 ;
+  ex:ticketStatus "已完成" .

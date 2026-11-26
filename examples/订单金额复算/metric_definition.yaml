@@ -1,0 +1,11 @@
+metric: 已交付订单金额
+variant: 五单教学对照
+unit: 万元
+grain: 订单
+owner: MO-001
+source: 本章表 7-1 的五笔教学记录，现场 ERP 来源及权限待核
+include: 已交付订单
+exclude: 尚未交付订单
+time_basis: 给定五单样本状态
+comparison: 同批样本签订订单金额
+missing_evidence: 待复核，不返回确定金额

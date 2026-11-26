@@ -1,0 +1,11 @@
+{
+  "name": "query_tickets",
+  "arguments": {
+    "customer": "C-001",
+    "statuses": [
+      "处理中",
+      "待派工"
+    ]
+  },
+  "model_ref": "ticket-query-1"
+}

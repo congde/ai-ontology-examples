@@ -1,0 +1,14 @@
+{
+  "model_ref": "ticket-query-1",
+  "customer": "C-001",
+  "tool": "query_tickets",
+  "valid_statuses": [
+    "处理中",
+    "待派工",
+    "已完成"
+  ],
+  "unfinished_statuses": [
+    "处理中",
+    "待派工"
+  ]
+}

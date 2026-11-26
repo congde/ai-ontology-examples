@@ -1,0 +1,56 @@
+{
+  "rule_version": "repair-v1",
+  "actors": {
+    "operator": {"role": "operator", "device_ids": ["E-001"]},
+    "supervisor": {"role": "supervisor", "device_ids": ["E-001"]},
+    "executor": {"role": "executor", "device_ids": ["E-001"]},
+    "auditor": {"role": "auditor", "device_ids": ["E-001"]},
+    "other": {"role": "operator", "device_ids": ["E-002"]}
+  },
+  "alarms": [
+    {
+      "alarm_id": "A-000",
+      "device_id": "E-001",
+      "name": "冷却液流量告警",
+      "time": "08:15",
+      "source": "设备监测/告警记录/A-000"
+    },
+    {
+      "alarm_id": "A-001",
+      "device_id": "E-001",
+      "name": "主轴振动告警",
+      "time": "09:00",
+      "source": "设备监测/告警记录/A-001"
+    },
+    {
+      "alarm_id": "A-002",
+      "device_id": "E-002",
+      "name": "传送带偏移告警",
+      "time": "09:05",
+      "source": "设备监测/告警记录/A-002"
+    }
+  ],
+  "observations": [
+    {
+      "device_id": "E-001",
+      "state": "运行中",
+      "time": "09:10",
+      "source": "设备监测/观测记录/E-001/09:10"
+    },
+    {
+      "device_id": "E-002",
+      "state": "停机",
+      "time": "09:12",
+      "source": "设备监测/观测记录/E-002/09:12"
+    }
+  ],
+  "repair_results": [
+    {
+      "alarm_id": "A-000",
+      "device_id": "E-001",
+      "conclusion": "更换过滤器，冷却液流量恢复",
+      "time": "08:40",
+      "source": "维修系统/维修结论/A-000"
+    }
+  ]
+}

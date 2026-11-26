@@ -1,0 +1,15 @@
+metrics:
+  - name: 交付准时率
+    grain: 订单
+    owner: 吴娜
+    window: 统计期及截止时点须确认
+    denominator: 同期按约定应交付的订单
+    numerator: 分母中按约定完成交付的订单
+    status: 定义草案，智造集团样本不可复算
+    missing: 合同约定交付日、当期订单覆盖和适用截止
+  - name: 客户流失风险
+    grain: 客户
+    owner: 郑伟
+    result: C-003 教学样本给定为高
+    status: 给定标签，独立判定待核
+    missing: 完整交互、观察截止及风险规则

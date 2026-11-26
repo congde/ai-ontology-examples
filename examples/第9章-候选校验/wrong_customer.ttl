@@ -1,0 +1,4 @@
+@prefix ex: <https://example.org/enterprise/> .
+ex:C-001 a ex:Customer .
+ex:C-002 a ex:Customer .
+ex:O-001 a ex:Order ; ex:belongsTo ex:C-002 .

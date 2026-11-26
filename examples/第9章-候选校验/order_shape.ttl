@@ -1,0 +1,5 @@
+@prefix ex: <https://example.org/enterprise/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+ex:OrderShape a sh:NodeShape ; sh:targetClass ex:Order ;
+  sh:property [ sh:path ex:belongsTo ; sh:minCount 1 ;
+                sh:maxCount 1 ; sh:class ex:Customer ] .

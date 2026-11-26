@@ -1,0 +1,9 @@
+PREFIX ex: <https://example.org/enterprise/>
+SELECT ?request ?requestTicket ?record ?recordTicket WHERE {
+  ?request a ex:CloseRequest ;
+    ex:forTicket ?requestTicket ;
+    ex:resolutionRecord ?record .
+  ?record ex:forTicket ?recordTicket .
+  FILTER (!sameTerm(?requestTicket, ?recordTicket))
+}
+ORDER BY ?request ?record ?requestTicket ?recordTicket

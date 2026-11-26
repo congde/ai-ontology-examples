@@ -1,0 +1,10 @@
+{
+  "model_ref": "ticket-query-1",
+  "rules": {
+    "unfinished_statuses": ["处理中", "待派工"],
+    "ticket_status_field": "status",
+    "ticket_customer_field": "customer"
+  },
+  "task": {"customer": "C-001", "read_only": true},
+  "tool": {"name": "query_tickets"}
+}
